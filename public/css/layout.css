@@ -38,6 +38,7 @@ header {
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   opacity: 0.963;
 }
 
 /* vertically center banner section */
@@ -101,7 +102,7 @@ header .social li a:hover { color: #11ABB0; }
 header .original-photo-from {
    position: absolute;
    bottom: -33px;
-   right: 0;
+   right: 3px;
    color: #FFFFFF;
    opacity: 0.7;
    font-size: 11px;
