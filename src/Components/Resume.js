@@ -49,7 +49,7 @@ class Resume extends Component {
          <div className="nine columns main-col">
           {work}
         </div>
-    </div>
+      </div>
 
 
 
