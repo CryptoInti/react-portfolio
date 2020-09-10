@@ -97,6 +97,16 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
+/* header original-photo-from */
+header .original-photo-from {
+   position: absolute;
+   bottom: -33px;
+   right: 0;
+   color: #FFFFFF;
+   opacity: 0.7;
+   font-size: 11px;
+}
+
 /* scrolldown link */
 header .scrolldown a {
    position: absolute;

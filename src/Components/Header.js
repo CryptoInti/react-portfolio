@@ -47,6 +47,8 @@ class Header extends Component {
          <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
       </p>
 
+      <p className="original-photo-from">Original photo from https://i.redd.it/bd5u7shmy3331.jpg</p>
+
    </header>
     );
   }
