@@ -1,16 +1,16 @@
 {
   "main": {
     "name": "Inti Cortés Aguirre",
-    "occupation": "Deep thinker - Nature Explorer - Dreams Developer",
+    "occupation": "deep thinker - nature explorer - dreams developer",
     "description": "Full Stack Javascript Developer",
     "image": "Inti-portfolio.jpeg",
-    "bio": "My name is Inti, living in Berlin, making changes in the World",
+    "bio": "My name is Inti, living in Concepción, Chile, making changes in my self to can be a change in the World",
     "contactmessage": "If you want to say Hi! do it here",
     "email": "inti.cortes.aguirre@gmail.com",
     "phone": "+56 9 3302 4159",
     "address": {
       "street": "14 EmserStrasse",
-      "city": "Berlin",
+      "city": "Concepción",
       "state": "DE",
       "zip": "traum 877"
     },

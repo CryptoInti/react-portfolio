@@ -27,7 +27,7 @@
 
     /* header styles
    ------------------------------------------------------------------ */
-   header .banner { padding-bottom: 12px; }
+   header .banner { padding-bottom: 333px; }
    header .banner-text h1 {
       font: 78px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;      
@@ -188,7 +188,7 @@
    /* Header Styles
    -------------------------------------------------------------------- */
    header .banner {
-      padding-bottom: 12px;
+      padding-bottom: 333px;
       padding-top: 6px;
    }
    header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
