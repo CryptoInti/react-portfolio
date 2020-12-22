@@ -192,6 +192,11 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #e3af00; }
 
+/* ------------------------------------------------------------------ */
+/* Lenguage Translate
+/* ------------------------------------------------------------------ */
+
+.lenguage {cursor: pointer;}
 
 /* ------------------------------------------------------------------ */
 /* c. About Section

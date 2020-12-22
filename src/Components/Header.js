@@ -1,57 +1,71 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
-  render() {
+   render() {
 
-    if(this.props.data){
-      var name = this.props.data.name;
-      var occupation= this.props.data.occupation;
-      var description= this.props.data.description;
-      var city= this.props.data.address.city;
-      var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
-    }
+      if (this.props.data) {
+         var lenguage = this.props.data.lenguage;
+         var iam = this.props.data.iam;
+         var name = this.props.data.name;
+         var occupation = this.props.data.occupation;
+         var description = this.props.data.description;
+         var city = this.props.data.address.city;
+         var networks = this.props.data.social.map(function (network) {
+            return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
+         })
+      }
 
-    return (
-      <header id="home">
+      return (
+         <header id="home">
 
-      <nav id="nav-wrap">
+            <nav id="nav-wrap">
 
-         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+               <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+               <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
-         <ul id="nav" className="nav">
-            <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-            <li><a className="smoothscroll" href="#about">About</a></li>
-	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Portfolio</a></li>
-            <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
-         </ul>
+               <ul id="nav" className="nav">
+                  <div className="eleven columns">
+                     <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
+                     <li><a className="smoothscroll" href="#about">About</a></li>
+                     <li><a className="smoothscroll" href="#resume">Resume</a></li>
+                     <li><a className="smoothscroll" href="#portfolio">Portfolio</a></li>
+                     <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
+                     <li><a className="smoothscroll" href="#contact">Contact</a></li>
 
-      </nav>
+                  </div>
+                  <div className="one column">
+                     <li className={lenguage ? 'lenguage' : 'current'}><a onClick={lenguage ? this.props.handleLenguage : ''}>ES</a></li>
+                     <li><a>/</a></li>
+                     <li className={lenguage ? 'current' : 'lenguage'}><a onClick={lenguage ? '' : this.props.handleLenguage}>EN</a></li>
 
-      <div className="row banner">
-         <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
-            <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
-            <hr />
-            <ul className="social">
-               {networks}
-            </ul>
-         </div>
-      </div>
+                  </div>
+               </ul>
 
-      <p className="scrolldown">
-         <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
-      </p>
+               {/* <ul id="nav" className="lenguage one column">
+               </ul> */}
 
-      <p className="original-photo-from">Original photo from https://i.redd.it/bd5u7shmy3331.jpg</p>
+            </nav>
 
-   </header>
-    );
-  }
+            <div className="row banner">
+               <div className="banner-text">
+                  <h1 className="responsive-headline">{iam} {name}.</h1>
+                  <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
+                  <hr />
+                  <ul className="social">
+                     {networks}
+                  </ul>
+               </div>
+            </div>
+
+            <p className="scrolldown">
+               <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+            </p>
+
+            <p className="original-photo-from">Original photo from https://i.redd.it/bd5u7shmy3331.jpg</p>
+
+         </header>
+      );
+   }
 }
 
 export default Header;

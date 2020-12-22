@@ -1,12 +1,12 @@
 {
   "main": {
-    "lenguage": "En",
+    "lenguage": "",
     "name": "Inti Cortés Aguirre",
-    "iam": "I'm ",
+    "iam": "Hola! soy",
     "occupation": "deep thinker - nature explorer - dreams developer",
     "description": "Full Stack Javascript Developer",
     "image": "Inti-portfolio.jpeg",
-    "bio": "My name is Inti, living in Concepción, Chile, making changes in my self to can be a change in the World",
+    "bio": "Hola! mi nombre es Inti, y vivo en el Paraiso, Chile, making changes in my self to can be a change in the World",
     "contactmessage": "If you want to say Hi! do it here",
     "email": "inti.cortes.aguirre@gmail.com",
     "phone": "+56 9 3302 4159",
